@@ -28,5 +28,3 @@ The Host and Port of all the seed nodes will be hardcoded in the config file. Wh
 
 ## Outputs
 Each node generates a separate output file in the same directory as the peer and seed nodes.
-
-This README provides clear instructions and explanations of the project's components and functionalities, enhancing readability and professionalism.
