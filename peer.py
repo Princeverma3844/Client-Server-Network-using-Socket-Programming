@@ -223,8 +223,8 @@ def main():
             threading.Thread(target= self.listen_neighbour).start()
             threading.Thread(target= self.liveliness_msg).start()
 
-    Host =  input("Please type the Host id of the peer = ")      # "127.0.1.1"
-    Port = int(input("Please type the Port id of the peer = "))
+    Host =  input("Please type the Host id of the peer = ")      # 127.0.1.1
+    Port = int(input("Please type the Port id of the peer = "))  # 1
     Peer_node = Peer(Host,Port)
     Peer_node.start()                                            # start the Peer node
 
