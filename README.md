@@ -25,8 +25,11 @@ The Host and Port of all the seed nodes will be hardcoded in the config file. Wh
 
 ## Proof of correctness
 **gossips:** All the nodes starts to communicate gossips the with their peers as soon as they get connected which can be seen from the output file.
+
 **broadcast:** This can be verified from some of the outputs that the sender peer id is different from the id of the peer from which the message is initiated.
+
 **dead:** This can be verified once you close any peer after some time in the output file of the seed output.
+
 **liveliness:** The receival of dead message from the peer to the seed itself proves the liveliness messages of the peers. 
 
 ### Key Concepts
