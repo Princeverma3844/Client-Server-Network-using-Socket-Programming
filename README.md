@@ -21,6 +21,13 @@ The Host and Port of all the seed nodes will be hardcoded in the config file. Wh
 - Peers, once connected to a seed, retrieve the list of other peers and establish connections with them.
 - Peers exchange two types of messages: Gossip messages and liveness messages. Each peer sends 10 gossip messages to its neighbors, forwarding new messages only. Liveness messages are sent periodically to check peer status.
 - If a peer fails to receive a response to three consecutive liveness messages from a neighbor, it reports the unresponsive peer to connected seed nodes for removal from the peer list.
+- You need to close any peer to check for the dead message send by the other peers to the seed node
+
+## Proof of correctness
+**gossips:** All the nodes starts to communicate gossips the with their peers as soon as they get connected which can be seen from the output file.
+**broadcast:** This can be verified from some of the outputs that the sender peer id is different from the id of the peer from which the message is initiated.
+**dead:** This can be verified once you close any peer after some time in the output file of the seed output.
+**liveliness:** The receival of dead message from the peer to the seed itself proves the liveliness messages of the peers. 
 
 ### Key Concepts
 - **Threading:** Used to enable peers to act as both servers and clients simultaneously.
