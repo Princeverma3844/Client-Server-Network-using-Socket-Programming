@@ -33,5 +33,15 @@ The Host and Port of all the seed nodes will be hardcoded in the config file. Wh
 - **Threading:** Used to enable peers to act as both servers and clients simultaneously.
 - **Locks:** Employed to ensure thread-safe access to shared resources.
 
+## Probable attacks
+**Sybil Attack:** In a Sybil attack, a malicious peer creates multiple fake identities (Sybil nodes) to gain a disproportionately large influence within the network. These fake identities could be used to disrupt the network's operation, manipulate messages, or control the flow of information.
+**Eclipse Attack:** In an eclipse attack, an attacker isolates a target node by surrounding it with malicious peers controlled by the attacker. This isolation prevents the target node from receiving accurate information, leading to potential disruptions or malicious actions.
+**Denial of Service (DoS) Attack:** Malicious peers could launch DoS attacks by overwhelming targeted nodes with a high volume of requests or messages, thereby disrupting their normal operations and potentially causing them to appear as if they are unresponsive.
+
+## Solution to these attacks
+**Peer Reputation Systems:** Implementing reputation systems where peers assess each other's behavior and assign reputations could help identify and isolate malicious peers.
+**Sybil Resistance:** Introduce mechanisms to limit the influence of Sybil nodes, such as requiring proof of computational work or social network verification.
+**Firewall and Filtering:** Deploy firewalls and message filtering mechanisms to detect and block malicious traffic, thereby mitigating DoS attacks and preventing the spread of malicious messages.
+
 ## Outputs
 Each node generates a separate output file in the same directory as the peer and seed nodes.
