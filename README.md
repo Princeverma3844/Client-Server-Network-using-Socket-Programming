@@ -1,4 +1,4 @@
-# P2P-Network
+# Client-Server-Network
 
 ## Objective
 The objective of this project is to implement a Gossip protocol over a peer-to-peer network to broadcast messages and ensure the liveness of connected peers. This README provides an overview of the network setup, protocol specifications, program output, and additional considerations regarding security.
